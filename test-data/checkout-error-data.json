@@ -1,0 +1,30 @@
+[
+  {
+    "testName": "All fields blank",
+    "firstName": "",
+    "lastName": "",
+    "zipCode": "",
+    "expectedError": "Error: First Name is required"
+  },
+  {
+    "testName": "First Name blank",
+    "firstName": "",
+    "lastName": "Doe",
+    "zipCode": "75001",
+    "expectedError": "Error: First Name is required"
+  },
+  {
+    "testName": "Last Name blank",
+    "firstName": "John",
+    "lastName": "",
+    "zipCode": "75001",
+    "expectedError": "Error: Last Name is required"
+  },
+  {
+    "testName": "Zip Code blank",
+    "firstName": "John",
+    "lastName": "Doe",
+    "zipCode": "",
+    "expectedError": "Error: Postal Code is required"
+  }
+]
