@@ -1,5 +1,62 @@
-{
-  "firstName": "John",
-  "lastName": "Doe",
-  "zipCode": "75001"
-}
+[
+  {
+    "firstName": "John",
+    "lastName": "Doe",
+    "zipCode": "75001",
+    "product": "sauce-labs-backpack"
+  },
+  {
+    "firstName": "Jane",
+    "lastName": "Smith",
+    "zipCode": "75002",
+    "product": "sauce-labs-bike-light"
+  },
+  {
+    "firstName": "Michael",
+    "lastName": "Johnson",
+    "zipCode": "75003",
+    "product": "sauce-labs-bolt-t-shirt"
+  },
+  {
+    "firstName": "Emily",
+    "lastName": "Davis",
+    "zipCode": "75004",
+    "product": "test.allthethings()-t-shirt-(red)"
+  },
+  {
+    "firstName": "David",
+    "lastName": "Wilson",
+    "zipCode": "75005",
+    "product": "sauce-labs-fleece-jacket"
+  },
+  {
+    "firstName": "Sarah",
+    "lastName": "Brown",
+    "zipCode": "75006",
+    "product": "sauce-labs-onesie"
+  },
+  {
+    "firstName": "Robert",
+    "lastName": "Miller",
+    "zipCode": "75007",
+    "product": "sauce-labs-fleece-jacket"
+  },
+  {
+    "firstName": "Jessica",
+    "lastName": "Taylor",
+    "zipCode": "75008",
+    "product": "sauce-labs-onesie"
+  },
+  {
+    "firstName": "Daniel",
+    "lastName": "Anderson",
+    "zipCode": "75009",
+    "product": "sauce-labs-onesie"
+  },
+  {
+    "firstName": "Olivia",
+    "lastName": "Thomas",
+    "zipCode": "75010",
+    "product": "test.allthethings()-t-shirt-(red)"
+  }
+]

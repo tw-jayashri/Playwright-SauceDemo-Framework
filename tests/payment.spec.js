@@ -5,7 +5,8 @@ import { CartPage } from '../pages/CartPage';
 import { CheckoutPage } from '../pages/CheckoutPage';
 import paymentData from '../test-data/payment-data.json' with { type: 'json' };
 
-test('Verify checkout payment flow', async ({ page }) => {
+paymentData.forEach((customer) => {
+test(`Checkout for ${customer.firstName} ${customer.lastName}`, async ({ page }) => {
 
     const login = new LoginPage(page);
     const products = new ProductsPage(page);
@@ -18,7 +19,7 @@ test('Verify checkout payment flow', async ({ page }) => {
 
     // PRODUCT FLOW
     await products.sortBy('lohi');
-    await products.addProduct('sauce-labs-bolt-t-shirt');
+    await products.addProduct(customer.product);
     await products.goToCart();
 
     // CART
@@ -26,9 +27,9 @@ test('Verify checkout payment flow', async ({ page }) => {
 
     // CHECKOUT
     await checkout.fillInformation(
-        paymentData.firstName,
-        paymentData.lastName,
-        paymentData.zipCode
+        customer.firstName,
+        customer.lastName,
+        customer.zipCode
     );
 
     await checkout.continue();
@@ -36,4 +37,5 @@ test('Verify checkout payment flow', async ({ page }) => {
 
     // ASSERTION (important for QA interview)
     await expect(page.locator('[data-test="back-to-products"]')).toBeVisible();
+});
 });
