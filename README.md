@@ -13,3 +13,6 @@ Automation framework built using:
 - Product Sorting
 - Checkout / Payment Flow
 - Checkout Validation Scenarios
+
+
+#Gitbash commands
